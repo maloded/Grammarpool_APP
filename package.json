@@ -1,0 +1,40 @@
+{
+  "name": "grammarpool_app",
+  "version": "1.0.0",
+  "description": "Framework agnostic NodeJS app",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm run lint && tsc",
+    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.ts\"",
+    "fmt": "prettier --write \"**/*.js\" \"**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maloded/Grammarpool_APP.git"
+  },
+  "author": "Malodied",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maloded/Grammarpool_APP/issues"
+  },
+  "homepage": "https://github.com/maloded/Grammarpool_APP#readme",
+  "engines": {
+    "node": "16 || 18 || 19 || 20"
+  },
+  "dependencies": {
+    "metasql": "^3.0.0-alpha.2",
+    "pg": "^8.11.3",
+    "tls": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.27",
+    "@types/pg": "^8.11.2",
+    "@types/ws": "^8.5.10",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.2"
+  }
+}
